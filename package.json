@@ -1,0 +1,36 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "watch:portal": "lerna run watch:portal --stream --concurrency 6",
+    "workshop": "lerna run serve --stream",
+    "update-version": "lerna publish --skip-git --skip-npm --force-publish '*'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-rc.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.1",
+    "@babel/plugin-syntax-export-extensions": "^7.0.0-beta.32",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-rc.1",
+    "@babel/plugin-transform-runtime": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0-rc.1",
+    "@babel/preset-stage-0": "^7.0.0-rc.1",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.4",
+    "lerna": "^4.0.0",
+    "ts-config-single-spa": "^3.0.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-config-single-spa-ts": "^4.1.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "single-spa": "^5.9.3"
+  }
+}
