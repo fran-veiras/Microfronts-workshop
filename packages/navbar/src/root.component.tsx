@@ -14,10 +14,9 @@ export default function Root(props) {
 
     <div className="navlinks">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contacts</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/gatitos">Gatitos</a></li>
+            <li><a href="#">Info</a></li>
         </ul>
     </div>
 </nav>

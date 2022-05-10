@@ -53,7 +53,9 @@
         "react": "https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js",
         "@uma/root-config": "//localhost:9000/uma-root-config.js",
-        "@uma/navbar": "//localhost:9001/uma-navbar.js"
+        "@uma/navbar": "//localhost:9001/uma-navbar.js",
+        "@uma/pagos": "//localhost:9002/uma-pagos.js",
+        "@uma/gatitos": "//localhost:9003/uma-gatitos.js"
       }
     }
   </script>
@@ -76,9 +78,7 @@
 
   <template id="single-spa-layout">
     <single-spa-router>
-      <route default>
-        <application name="@uma/navbar"></application>
-      </route>
+      <application name="@uma/navbar"></application>
     </single-spa-router>
   </template>
 
